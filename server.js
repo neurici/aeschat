@@ -7,7 +7,7 @@
 //
 // Config variables:
 // Default listening interface (use 0.0.0.0 for all)
-var CONFIG_HTTP_INTERFACE = '127.0.0.1';
+var CONFIG_HTTP_INTERFACE = '0.0.0.0';
 
 // Default listening port
 var CONFIG_HTTP_PORT = 8888;
@@ -188,5 +188,5 @@ http.createServer(function(request, response) {
 
 //----------------------------------------------------------------------------
 
-console.log("aeschat server running at\n  => http://localhost:" + port +
+console.log("aeschat server running at\n  => http://192.168.0.125:" + port +
   "/\nCTRL + C to shutdown");
